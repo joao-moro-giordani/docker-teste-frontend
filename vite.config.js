@@ -22,7 +22,7 @@ export default defineConfig({
       '/api': {
         // Porta que o container do Laravel expõe no seu computador
         // (lado esquerdo do "ports:" no docker-compose.yml; no Sail, APP_PORT).
-        target: 'http://localhost:8080',
+        target: 'http://localhost:8081',
         changeOrigin: true,
         // Se as rotas estiverem em routes/web.php (sem o prefixo /api),
         // descomente a linha abaixo para tirar o /api antes de repassar:
